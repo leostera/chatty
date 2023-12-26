@@ -78,7 +78,7 @@ let view model =
                Format.sprintf "%s > %s" user msg)
     |> String.concat "\n"
   in
-  messages ^ "\n\n> " ^ Text_input.current_text model.input_field
+  messages ^ "\n\n" ^ Text_input.view model.input_field
 
 let app = Minttea.app ~init ~update ~view ()
 
