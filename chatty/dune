@@ -1,0 +1,3 @@
+(library
+ (name chatty)
+ (libraries twitch leaves spices minttea riot))
